@@ -11,7 +11,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -29,7 +28,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         
     - name: Install depedencies
-    - run: npm install @angular/cli
+      run: npm install @angular/cli
 
     - name: Run test
-    - run: npm test
+      run: npm test
